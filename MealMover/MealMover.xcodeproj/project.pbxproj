@@ -26,6 +26,7 @@
 		62089E6F2B850DF500958A3F /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62089E622B850DF500958A3F /* Roboto-Thin.ttf */; };
 		62089E702B850DF500958A3F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62089E632B850DF500958A3F /* Roboto-Black.ttf */; };
 		62089E732B850F5F00958A3F /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62089E722B850F5F00958A3F /* UIFontExtension.swift */; };
+		62089E792B864C7800958A3F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62089E782B864C7800958A3F /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		62089E622B850DF500958A3F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		62089E632B850DF500958A3F /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		62089E722B850F5F00958A3F /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		62089E782B864C7800958A3F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +84,12 @@
 		62089E3F2B850B3200958A3F /* MealMover */ = {
 			isa = PBXGroup;
 			children = (
+				62089E752B864C1E00958A3F /* NavigationLayer */,
 				62089E542B850DC300958A3F /* Resources */,
-				62089E402B850B3200958A3F /* AppDelegate.swift */,
-				62089E422B850B3200958A3F /* SceneDelegate.swift */,
+				62089E742B864B1700958A3F /* Application */,
 				62089E442B850B3200958A3F /* ViewController.swift */,
-				62089E492B850B3500958A3F /* Assets.xcassets */,
 				62089E4B2B850B3500958A3F /* LaunchScreen.storyboard */,
-				62089E4E2B850B3500958A3F /* Info.plist */,
+				62089E492B850B3500958A3F /* Assets.xcassets */,
 			);
 			path = MealMover;
 			sourceTree = "<group>";
@@ -136,6 +137,40 @@
 				62089E722B850F5F00958A3F /* UIFontExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		62089E742B864B1700958A3F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				62089E402B850B3200958A3F /* AppDelegate.swift */,
+				62089E422B850B3200958A3F /* SceneDelegate.swift */,
+				62089E4E2B850B3500958A3F /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		62089E752B864C1E00958A3F /* NavigationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				62089E772B864C4D00958A3F /* Coordinators */,
+				62089E762B864C4400958A3F /* Controllers */,
+			);
+			path = NavigationLayer;
+			sourceTree = "<group>";
+		};
+		62089E762B864C4400958A3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		62089E772B864C4D00958A3F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				62089E782B864C7800958A3F /* Coordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62089E452B850B3200958A3F /* ViewController.swift in Sources */,
+				62089E792B864C7800958A3F /* Coordinator.swift in Sources */,
 				62089E412B850B3200958A3F /* AppDelegate.swift in Sources */,
 				62089E732B850F5F00958A3F /* UIFontExtension.swift in Sources */,
 				62089E432B850B3200958A3F /* SceneDelegate.swift in Sources */,
@@ -370,7 +406,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W2HCKKQTYD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MealMover/Info.plist;
+				INFOPLIST_FILE = MealMover/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -401,7 +437,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W2HCKKQTYD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MealMover/Info.plist;
+				INFOPLIST_FILE = MealMover/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
