@@ -28,7 +28,7 @@ private extension AppCoordinator {
         let homeNavigationController = UINavigationController()
         let homeCoordinator = HomeCoordinator(type: .home, navigationController: homeNavigationController)
         homeNavigationController.tabBarItem = UITabBarItem(title: "Home",
-                                                           image: UIImage.init(systemName: "pencil.tip.crop.circle"),
+                                                           image: UIImage.init(resource: .home),
                                                            tag: 0)
         homeCoordinator.finishDelegate = self
         homeCoordinator.start()
@@ -36,7 +36,7 @@ private extension AppCoordinator {
         let orderNavigationController = UINavigationController()
         let orderCoordinator = OrderCoordinator(type: .order, navigationController: orderNavigationController)
         orderNavigationController.tabBarItem = UITabBarItem(title: "Order",
-                                                           image: UIImage.init(systemName: "pencil.tip.crop.circle"),
+                                                            image: UIImage.init(resource: .order),
                                                            tag: 1)
         orderCoordinator.finishDelegate = self
         orderCoordinator.start()
@@ -44,7 +44,7 @@ private extension AppCoordinator {
         let listNavigationController = UINavigationController()
         let listCoordinator = ListCoordinator(type: .list, navigationController: listNavigationController)
         listNavigationController.tabBarItem = UITabBarItem(title: "List",
-                                                           image: UIImage.init(systemName: "pencil.tip.crop.circle"),
+                                                           image: UIImage.init(resource: .list),
                                                            tag: 2)
         listCoordinator.finishDelegate = self
         listCoordinator.start()
@@ -52,7 +52,7 @@ private extension AppCoordinator {
         let profileNavigationController = UINavigationController()
         let profileCoordinator = ProfileCoordinator(type: .profile, navigationController: profileNavigationController)
         profileNavigationController.tabBarItem = UITabBarItem(title: "Profile",
-                                                           image: UIImage.init(systemName: "pencil.tip.crop.circle"),
+                                                              image: UIImage.init(resource: .profile),
                                                            tag: 3)
         profileCoordinator.finishDelegate = self
         profileCoordinator.start()

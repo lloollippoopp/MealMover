@@ -36,6 +36,7 @@
 		62089E882B865E2E00958A3F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62089E872B865E2E00958A3F /* TabBarController.swift */; };
 		62089E8E2B878B7000958A3F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62089E8D2B878B7000958A3F /* OnboardingViewController.swift */; };
 		62089E902B878BC500958A3F /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62089E8F2B878BC500958A3F /* OnboardingViewPresenter.swift */; };
+		62089E922B87984200958A3F /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62089E912B87984200958A3F /* OnboardingPartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		62089E872B865E2E00958A3F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		62089E8D2B878B7000958A3F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		62089E8F2B878BC500958A3F /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
+		62089E912B87984200958A3F /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			children = (
 				62089E8D2B878B7000958A3F /* OnboardingViewController.swift */,
 				62089E8F2B878BC500958A3F /* OnboardingViewPresenter.swift */,
+				62089E912B87984200958A3F /* OnboardingPartViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62089E922B87984200958A3F /* OnboardingPartViewController.swift in Sources */,
 				62089E8E2B878B7000958A3F /* OnboardingViewController.swift in Sources */,
 				62089E862B865C8D00958A3F /* ProfileCoordinator.swift in Sources */,
 				62089E902B878BC500958A3F /* OnboardingViewPresenter.swift in Sources */,
