@@ -11,10 +11,11 @@ import UIKit
 class OnboardingPartViewController: UIViewController {
     
     // MARK: - Properties
-    var imageToShow: UIImage? { didSet { imageView.image = imageToShow } }
-    var titleText: String? { didSet { titleLabe.text = titleText } }
-    var descriptionText: String? { didSet { descriptionLabel.text = descriptionText } }
-    
+    var imageToShow: UIImage?     { didSet { imageView.image = imageToShow } }
+    var titleText: String?        { didSet { titleLabe.text = titleText } }
+    var descriptionText: String?  { didSet { descriptionLabel.text = descriptionText } }
+    var buttonText: String?
+
     // MARK: - Views
     private let imageView = UIImageView()
     private let titleLabe = UILabel()
@@ -77,10 +78,13 @@ private extension OnboardingPartViewController {
 
         NSLayoutConstraint.activate([
             descriptionLabel.topAnchor.constraint(equalTo: titleLabe.bottomAnchor, constant: 23),
-            descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 71),
             descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -72)
         ])
     }
     
+   
+    
 }
+
+
