@@ -37,6 +37,7 @@
 		62089E8E2B878B7000958A3F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62089E8D2B878B7000958A3F /* OnboardingViewController.swift */; };
 		62089E902B878BC500958A3F /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62089E8F2B878BC500958A3F /* OnboardingViewPresenter.swift */; };
 		62089E922B87984200958A3F /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62089E912B87984200958A3F /* OnboardingPartViewController.swift */; };
+		627AB1C32B90F41000584E0F /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627AB1C22B90F41000584E0F /* UserStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		62089E8D2B878B7000958A3F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		62089E8F2B878BC500958A3F /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 		62089E912B87984200958A3F /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
+		627AB1C22B90F41000584E0F /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		62089E3F2B850B3200958A3F /* MealMover */ = {
 			isa = PBXGroup;
 			children = (
+				627AB1C12B90F3DE00584E0F /* ServicesLayer */,
 				62089E742B864B1700958A3F /* Application */,
 				62089E752B864C1E00958A3F /* NavigationLayer */,
 				62089E8B2B878AFC00958A3F /* UILayer */,
@@ -219,6 +222,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		627AB1C12B90F3DE00584E0F /* ServicesLayer */ = {
+			isa = PBXGroup;
+			children = (
+				627AB1C22B90F41000584E0F /* UserStorage.swift */,
+			);
+			path = ServicesLayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627AB1C32B90F41000584E0F /* UserStorage.swift in Sources */,
 				62089E922B87984200958A3F /* OnboardingPartViewController.swift in Sources */,
 				62089E8E2B878B7000958A3F /* OnboardingViewController.swift in Sources */,
 				62089E862B865C8D00958A3F /* ProfileCoordinator.swift in Sources */,

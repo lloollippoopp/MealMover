@@ -13,7 +13,9 @@ class OnboardingCoordinator: Coordinator {
         showOnboarding()
     }
     
-    override func finish() {}
+    override func finish() {
+        finishDelegate?.coordinatorDidFinish(childCoordinator: self)
+    }
 }
 
 private extension OnboardingCoordinator {
